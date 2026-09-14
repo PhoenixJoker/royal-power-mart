@@ -117,7 +117,7 @@
   </div>
 
   <div class="qr-card">
-    <img src="location-qr.png" alt="Royal Power Mart location QR code">
+   <a id="generalMapQrLink" href="#" target="_blank" rel="noopener"> <img src="location-qr.png" alt="Royal Power Mart location QR code"> </a>
     <h3>Scan to locate us</h3>
     <p>Use our general Royal Power Mart location QR code.</p>
     <a id="generalMapLink" class="btn primary" href="#" target="_blank" rel="noopener">Open Google Maps</a>
@@ -169,7 +169,7 @@
   $("#emailLink").textContent = rpm.email;
   $("#emailLink").href = "mailto:" + rpm.email;
   $("#generalMapLink").href = rpm.generalMapUrl;
-
+  $("#generalMapQrLink").href = rpm.generalMapUrl;
   $("#branchGrid").innerHTML = rpm.branches.map((b, i) => `
     <article class="branch-card">
       <div class="branch-number">${String(i+1).padStart(2,"0")}</div>
