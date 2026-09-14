@@ -72,3 +72,4 @@ const RPM = {
     ["Tata Power Solar", "Solar"]
   ]
 };
+window.RPM = RPM;
