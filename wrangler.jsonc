@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developers.cloudflare.com/workers/wrangler/config-schema.json",
+  "name": "royal-power-mart",
+  "compatibility_date": "2026-09-14",
+  "assets": {
+    "directory": "."
+  }
+}

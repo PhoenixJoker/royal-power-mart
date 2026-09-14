@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Royal Power Mart | Inverters, Batteries & Solar | Rajkot</title>
+  <meta name="description" content="Royal Power Mart — inverters, batteries and solar solutions in Rajkot.">
+  <meta name="theme-color" content="#17235f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="config.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#home" aria-label="Royal Power Mart home">
+    <img src="rpm-logo.jpg" alt="Royal Power Mart logo">
+  </a>
+  <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+  <nav class="nav">
+    <a href="#products">Products</a>
+    <a href="#brands">Brands</a>
+    <a href="#locations">Locations</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="header-cta" href="#contact">Contact us</a>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="hero-copy">
+    <div class="eyebrow">INVERTERS • BATTERIES • SOLAR</div>
+    <h1><span id="heroTitle">Reliable power.</span><br><em id="heroAccent">Royal service.</em></h1>
+    <p id="heroDescription"></p>
+    <div class="hero-actions">
+      <a class="btn primary" href="#locations">Find a branch</a>
+      <a class="btn outline" href="#contact">Talk to our team</a>
+    </div>
+    <div class="trust-row">
+      <span>✓ Trusted brands</span>
+      <span>✓ Expert guidance</span>
+      <span>✓ Rajkot service</span>
+    </div>
+  </div>
+  <div class="hero-logo-card">
+    <img src="rpm-logo.jpg" alt="Royal Power Mart">
+    <div class="hero-badge">Powering today.<br><strong>Energizing tomorrow.</strong></div>
+  </div>
+</section>
+
+<section class="quick-strip">
+  <div><strong>01</strong><span>Solar Rooftop</span></div>
+  <div><strong>02</strong><span>Home & Online UPS</span></div>
+  <div><strong>03</strong><span>Tubular • SMF • Automotive</span></div>
+  <div><strong>04</strong><span>Practical product guidance</span></div>
+</section>
+
+<section id="products" class="section">
+  <div class="section-head">
+    <div><div class="eyebrow">WHAT WE OFFER</div><h2>Power solutions for every need.</h2></div>
+    <p>From homes and businesses to vehicles and farms, choose the right power solution with help from our team.</p>
+  </div>
+  <div class="product-grid">
+    <article class="product-card solar">
+      <div class="icon">☀</div>
+      <h3>Solar Rooftop</h3>
+      <p>Residential, commercial, trust, industrial and farm solar solutions.</p>
+      <a href="#contact">Enquire about solar →</a>
+    </article>
+    <article class="product-card dark">
+      <div class="icon">⚡</div>
+      <h3>Inverters & UPS</h3>
+      <p>Home inverters, online UPS and stabilizer solutions for dependable power.</p>
+      <a href="#contact">Enquire about inverters →</a>
+    </article>
+    <article class="product-card battery">
+      <div class="icon">▣</div>
+      <h3>Batteries</h3>
+      <p>Tubular, SMF and automotive batteries for backup and mobility.</p>
+      <a href="#contact">Enquire about batteries →</a>
+    </article>
+  </div>
+</section>
+
+<section id="brands" class="section brands-section">
+  <div class="section-head">
+    <div><div class="eyebrow">OUR PREMIUM BRANDS</div><h2>Names you can trust.</h2></div>
+    <p>We work with established brands across solar, inverter and battery categories.</p>
+  </div>
+  <div id="brandsGrid" class="brands-grid"></div>
+</section>
+
+<section class="legacy">
+  <div>
+    <div class="eyebrow">ROYAL MOTOR MART LEGACY</div>
+    <h2>95 years of experience.<br><em>Now powering the future.</em></h2>
+  </div>
+  <p>Royal Power Mart carries forward the experience and legacy of Royal Motor Mart, bringing trusted power products and practical service to customers in Rajkot.</p>
+</section>
+
+<section id="locations" class="section">
+  <div class="section-head">
+    <div><div class="eyebrow">VISIT US</div><h2>Four Rajkot locations.</h2></div>
+    <p>Choose your nearest branch and open its exact location in Google Maps.</p>
+  </div>
+  <div id="branchGrid" class="branch-grid"></div>
+</section>
+
+<section id="contact" class="contact-section">
+  <div class="contact-intro">
+    <div class="eyebrow">GET IN TOUCH</div>
+    <h2>Let's find the right power solution for you.</h2>
+    <p>Call or WhatsApp our team directly. Every listed number supports both calling and WhatsApp.</p>
+    <div id="peopleGrid" class="people-grid"></div>
+    <div class="email-line">✉ <a id="emailLink" href="#"></a></div>
+  </div>
+
+  <div class="qr-card">
+    <img src="location-qr.png" alt="Royal Power Mart location QR code">
+    <h3>Scan to locate us</h3>
+    <p>Use our general Royal Power Mart location QR code.</p>
+    <a id="generalMapLink" class="btn primary" href="#" target="_blank" rel="noopener">Open Google Maps</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="footer-brand">
+    <img src="rpm-logo.jpg" alt="Royal Power Mart logo">
+  </div>
+  <div>© <span id="year"></span> Royal Power Mart · Rajkot, Gujarat</div>
+  <a href="#home">Back to top ↑</a>
+</footer>
+
+<script>
+(function(){
+  const $ = (s) => document.querySelector(s);
+  const rpm = window.RPM;
+
+  document.title = rpm.brand.name + " | Inverters, Batteries & Solar | Rajkot";
+  $("#heroTitle").textContent = rpm.brand.heroTitle;
+  $("#heroAccent").textContent = rpm.brand.heroAccent;
+  $("#heroDescription").textContent = rpm.brand.description;
+
+  const nav = $(".nav"), menu = $(".menu-btn");
+  menu.addEventListener("click", () => {
+    const open = nav.classList.toggle("open");
+    menu.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  nav.querySelectorAll("a").forEach(a => a.addEventListener("click", () => nav.classList.remove("open")));
+
+  const wa = (phone, text) =>
+    "https://wa.me/91" + phone + "?text=" + encodeURIComponent(text || "Hello Royal Power Mart, I need a power solution.");
+
+  $("#peopleGrid").innerHTML = rpm.contacts.map(c => `
+    <div class="person-card">
+      <div>
+        <strong>${c.name}</strong>
+        <span>+91 ${c.phone.slice(0,5)} ${c.phone.slice(5)}</span>
+      </div>
+      <div class="person-actions">
+        <a href="tel:+91${c.phone}">☎ Call</a>
+        <a class="wa" href="${wa(c.phone)}" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  `).join("");
+
+  $("#emailLink").textContent = rpm.email;
+  $("#emailLink").href = "mailto:" + rpm.email;
+  $("#generalMapLink").href = rpm.generalMapUrl;
+
+  $("#branchGrid").innerHTML = rpm.branches.map((b, i) => `
+    <article class="branch-card">
+      <div class="branch-number">${String(i+1).padStart(2,"0")}</div>
+      <h3>${b.name}</h3>
+      <p>${b.address}</p>
+      ${b.mapUrl
+        ? `<a class="map-btn" href="${b.mapUrl}" target="_blank" rel="noopener">📍 Get directions</a>`
+        : `<span class="map-soon">📍 Google Maps listing coming soon</span>`}
+    </article>
+  `).join("");
+
+  $("#brandsGrid").innerHTML = rpm.brands.map(b => `
+    <div class="brand-pill"><strong>${b[0]}</strong><span>${b[1]}</span></div>
+  `).join("");
+
+  $("#year").textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
