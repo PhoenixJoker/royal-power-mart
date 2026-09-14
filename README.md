@@ -28,3 +28,4 @@ For an existing Worker, connect this GitHub repository from:
 Workers & Pages → royal-power-mart → Settings → Builds → Connect
 
 After the first successful connection, future pushes to the configured branch can automatically build and deploy the website.
+Website connected to Cloudflare.
